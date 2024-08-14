@@ -34,3 +34,9 @@ class Course(models.Model):
     # Create a toString method for object string representation
     def __str__(self) -> str:
         return 'Name: ' + self.name + ', ' + 'Description:' + self.description
+
+
+class Lesson(models.Model):
+    title = models.CharField(max_length=200, default='title')
+    content = models.TextField()
+    course = models.ForeignKey(Course, null=True, on_delete=models.CASCADE)
