@@ -2,9 +2,9 @@
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'lab4_learning_django',
+        'NAME': 'lab3_learning_django',
         'USER': 'postgres',
-        'PASSWORD': 'Tuandayne5047#$',
+        'PASSWORD': 'Tnt5047#$',
         'HOST': 'localhost',
         'PORT': '5432',
     }

@@ -27,6 +27,7 @@ print('\n')
 
 # 2. Get the instructors of Cloud app dev course
 instructors = Instructor.objects.filter(course__name__contains='Cloud')
+# instructors = Course.objects.get(name__contains='Cloud').instructors.all()
 print('2. Get the instructors of Cloud app dev course')
 print(instructors)
 print('\n')
